@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+
+body {
+    background-color: #EAEAEA;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Holtwood One SC', serif;
+    margin: 100px;
+    font-size: 40px;
+}
+
+
+form {
+    display: grid;
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    background-color: #8E8E8E;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 150px;
+}
+
+#screen-calculations {
+    grid-column: 1 / 5;
+    height: 40px;
+    text-align: right;
+    font-family: 'Salsa', cursive, serif;
+    font-size: 28px;
+    color: black;
+}
+
+button {
+    height: 60px;
+    font-size: 22px;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: #a3a3a3;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (max-width: 434px) {
+    form {
+        margin-top: 80px;
+        width: 80%;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #screen-calculations {
+        height: 60px;
+    }
+  }
